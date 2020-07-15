@@ -1785,7 +1785,8 @@ function replyTweet(tweetID, replyMSG){
 
 //Obtain the reply message if someone tweets at us
 function tweetEvent(tweetMSG){
-  if (replyCount != 0){
+  //limit how many times the bot can reply
+  /*if (replyCount != 0){
     replyCount++;
     console.log("no tweet sent")
     if (replyCount === 3){
@@ -1795,7 +1796,7 @@ function tweetEvent(tweetMSG){
       return;
     }
     return;
-  }
+  }*/
   //I'm just trusting this works
   let replyMessage = "";
   let fs = require('fs');
@@ -1836,7 +1837,7 @@ function tweetEvent(tweetMSG){
 
   console.log(usedList);
   var reply = '@'+ from + " " + replyMessage;
-  replyCount++;
+  //replyCount++;
   replyTweet(nameID, reply);
 }
 
