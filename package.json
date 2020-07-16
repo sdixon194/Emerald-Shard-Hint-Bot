@@ -4,6 +4,7 @@
   "description": "",
   "main": "shardbot.js",
   "scripts": {
+    "start": "node shardbot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
