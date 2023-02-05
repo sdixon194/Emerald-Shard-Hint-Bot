@@ -6,7 +6,7 @@ const client = tumblr.createClient( config );
 const hintList = require( path.join( __dirname, 'hintList.js' ) )
 
 let list = [];
-let timeToPost = 300000;
+let timeToPost = 10000;
 
 // Obtain a random post from the list.
 function pickPost(){
